@@ -82,6 +82,7 @@ export default {
     methods: {
         changLang(e) {
             this.$setLanguage(e.target.checked ? 'en' : 'vi')
+            this.$router.go()
         }
     }
 }

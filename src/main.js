@@ -17,7 +17,6 @@ app.config.globalProperties.$t = (string) => {
 };
 app.config.globalProperties.$setLanguage = (language) => {
     localStorage.setItem("lang", language);
-    location.reload(true);
 };
 
 app.mount("#app");
