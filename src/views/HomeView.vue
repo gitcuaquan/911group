@@ -1,18 +1,18 @@
 <template>
-  <div class="home">
+  <SectionHero></SectionHero>
+  <!-- <div class="home">
     <h1>quân nè</h1>
-      {{$t('hello')}}
-  </div>
+
+  </div> -->
 </template>
 
 <script>
+import SectionHero from '@/components/section/hero.vue'
 // @ is an alias to /src
-
-
 export default {
   name: 'HomeView',
   components: {
-  
+    SectionHero
   }
 }
 </script>

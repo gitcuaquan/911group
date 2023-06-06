@@ -1,5 +1,5 @@
  const vi= {
-    hello:"Xin chào"
+    home:"Trang chủ"
 }
 
 export default vi

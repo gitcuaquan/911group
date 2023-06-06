@@ -32,16 +32,25 @@ export default {
   color: #2c3e50;
 }
 
-nav {
-  padding: 30px;
+html::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	background-color: #f5f5f500;
+	border-radius: 10px;
 }
 
-nav a {
-  font-weight: bold;
-  color: #2c3e50;
+html::-webkit-scrollbar
+{
+	width: 10px;
+	background-color: transparent;
 }
 
-nav a.router-link-exact-active {
-  color: #42b983;
+html::-webkit-scrollbar-thumb
+{
+	border-radius: 10px;
+	background-image: -webkit-gradient(linear,
+									   left bottom,
+									   left top,
+									   color-stop(0.44, rgb(163, 163, 163)));
 }
 </style>
