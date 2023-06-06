@@ -4,7 +4,8 @@ const en = {
     hiring:"Hiring Staff",
     news:"News",
     contact:"Contact",
-    service:"Service"
+    service:"Service",
+    home_title_1:"Professional Security Services"
 }
 
 export default en
