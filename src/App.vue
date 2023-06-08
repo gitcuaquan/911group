@@ -10,47 +10,52 @@
   <LayoutFooter></LayoutFooter>
 </template>
 <script>
-import LayoutHeader from '@/components/layout/header.vue' 
-import LayoutFooter from '@/components/layout/footer.vue' 
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import LayoutHeader from '@/components/layout/header.vue'
+import LayoutFooter from '@/components/layout/footer.vue'
 export default {
   name: 'APP_MAIN',
-  components:{
+  components: {
     LayoutHeader,
     LayoutFooter
-
+  },
+  mounted() {
+    this.$nextTick(() => {
+      AOS.init()
+    })
   }
 }
 </script>
 
 <style>
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css");
 @import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@200;300;400;500;600;700;800;900&display=swap');
+
 #app {
-  font-family: 'Be Vietnam Pro', sans-serif,Avenir, Helvetica, Arial, sans-serif !important;
+  font-family: 'Be Vietnam Pro', sans-serif, Avenir, Helvetica, Arial, sans-serif !important;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
 }
 
-html::-webkit-scrollbar-track
-{
-	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
-	background-color: #f5f5f500;
-	border-radius: 10px;
+html::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: #f5f5f500;
+  border-radius: 10px;
 }
 
-html::-webkit-scrollbar
-{
-	width: 10px;
-	background-color: transparent;
+html::-webkit-scrollbar {
+  width: 10px;
+  background-color: transparent;
 }
 
-html::-webkit-scrollbar-thumb
-{
-	border-radius: 10px;
-	background-image: -webkit-gradient(linear,
-									   left bottom,
-									   left top,
-									   color-stop(0.44, rgb(163, 163, 163)));
+html::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-image: -webkit-gradient(linear,
+      left bottom,
+      left top,
+      color-stop(0.44, rgb(163, 163, 163)));
 }
 </style>

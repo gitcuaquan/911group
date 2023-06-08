@@ -5,9 +5,11 @@ import store from "./store";
 import vi from "./lang/vi";
 import en from "./lang/en";
 
+
 const app = createApp(App);
 app.use(store);
 app.use(router);
+
 
 app.config.globalProperties.$t = (string) => {
   const lang = localStorage.getItem("lang");

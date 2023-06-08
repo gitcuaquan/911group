@@ -5,7 +5,9 @@ const en = {
     news:"News",
     contact:"Contact",
     service:"Service",
-    home_title_1:"Professional Security Services"
+    home_title_1:"Wellcom To",
+    home_abuout_1:"About Us",
+    contact_btn:"Contact Now"
 }
 
 export default en

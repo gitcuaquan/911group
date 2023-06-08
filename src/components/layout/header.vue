@@ -23,7 +23,7 @@
                 </div>
             </div>
         </div>
-        <nav :class="`navbar navbar-expand-lg bg-light ${!isShown ? 'bg-opacity-50' : ''}  py-0`">
+        <nav :class="`navbar navbar-expand-lg bg-light ${!isShown ? 'bg-opacity-75' : ''}  py-0`">
             <div class="container">
                 <button class="navbar-toggler"
                         type="button"
